@@ -23,11 +23,13 @@ import Strategy from '../strategy';
 import Copytrading from '../copytrading';
 import Botlist from '../botlist';
 import Smartedge from '../smartedge';
+import Dptool from '../dptool';
 import Signals from '../signals';
 import Tradingview from '../tradingview';
 import SpeedBot from '../speedbot';
 import { FaChartBar, FaChartLine, FaPuzzlePiece, FaChessKnight, FaUsers, FaShieldAlt, FaRobot, FaTachometerAlt, FaExchangeAlt, FaCopy, FaLightbulb, FaBolt } from 'react-icons/fa';
 import { MdSchema, MdGridOn } from 'react-icons/md';
+
 
 
 const AppWrapper = observer(() => {
@@ -225,6 +227,18 @@ const AppWrapper = observer(() => {
                             id='id-botlist'
                         >
                             <Botlist />
+                        </div>
+
+                        <div
+                            label={
+                                <span style={{ color: '#ffffff', fontWeight: 'bold', display: 'inline-flex', alignItems: 'center', justifyContent: 'flex-start', fontSize: '12px' }}>
+                                    <FaChartBar size={14} />
+                                    D Trader
+                                </span>
+                            }
+                            id='id-dptool'
+                        >
+                            <Dptool />
                         </div>
 
                         <div
